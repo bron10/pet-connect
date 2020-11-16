@@ -5,6 +5,9 @@ All the APIS are maintained in swagger file. Access available after setup is run
 
 This is a [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Arch.
+![Alt text](arch.png?raw=true "Architecture")
+
 ## Installation
 
 ```bash
@@ -43,7 +46,7 @@ $ npm run test:cov
 ## to do
 Detailed unit testing.
 Commenting
-
+Error handling
 
 ## License
 

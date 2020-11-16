@@ -35,14 +35,13 @@ describe('AppController (e2e)', () => {
       })
   });
 
-  it('/customers?state=ACT (GET)', () => {
+  it('/customers?petExperience=Y (GET)', () => {
     const petExperience = `Y`;
     return request(app.getHttpServer())
       .get(`/customers?petExperience=${petExperience}`)
       .expect(200)
       .then((data) => {
-        console.log("data=>", data.body.length)
-        
+        return expect(data.body.length).toBe(6);
       })
   });
 });
